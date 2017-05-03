@@ -33,6 +33,8 @@ namespace Parcial3_Base
 
     internal class MatrixOperator
     {
+       
+
         /// <summary>
         /// Suma las matrices parámetro.
         /// Valor del punto: 1.0 / 5.0
@@ -40,16 +42,28 @@ namespace Parcial3_Base
         /// <param name="matrixA"></param>
         /// <param name="matrixB"></param>
         /// <returns>La matriz suma</returns>
-        public int[,] AddMatrix(int[,] matrixA, int[,] matrixB)
+        public int[,]AddMatrix(int[,] matrixA, int[,] matrixB)
         {
+
             int[,] result = null;
+
+            result = new int[];
+
 
             if (result != null)
             {
-                result.PrintMatrixValues();
-            }
+                for (int i = 0; i < matrixA.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrixB.GetLength(1); j++)
+                    {
 
-            return result;
+                        result[i, j] = (matrixA[i, j] + matrixB[i, j]);
+
+                    }
+                }
+
+            }
+               return result;
         }
 
         /// <summary>
@@ -63,13 +77,28 @@ namespace Parcial3_Base
         {
             int[,] result = null;
 
+            result = new int[];
+
             if (result != null)
             {
-                result.PrintMatrixValues();
-            }
+                {
+                    for (int i = 0; i < matrix.GetLength(0); i++)
+                    {
+                        for (int j = 0; j < matrix.GetLength(1); j++)
+                        {
+                            result[i, j] = (matrix[i, j] * scalar);
 
+                        }
+                    }
+
+                }
+                
+            }
             return result;
         }
+        
+
+          
 
         /// <summary>
         /// Multiplica dos matrices parámetro
@@ -81,10 +110,19 @@ namespace Parcial3_Base
         public int[,] MultiplyMatrices(int[,] matrixA, int[,] matrixB)
         {
             int[,] result = null;
-
+            result = new int[,];
             if (result != null)
             {
-                result.PrintMatrixValues();
+                
+                for (int i = 0; i < matrixA.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrixB.GetLength(1); j++)
+                    {
+
+                        result[i, j] = (matrixA[i, j] * matrixB[i, j]);
+
+                    }
+                }
             }
 
             return result;
@@ -113,7 +151,16 @@ namespace Parcial3_Base
 
             if (result != null)
             {
-                result.PrintMatrixValues();
+                for (int i = 0; i < matrixA.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrixB.GetLength(1); j++)
+                    {
+
+                        result[i, j] = (matrixA[i, j] * matrixB[i, j]);
+
+
+                    }
+                }
             }
 
             return result;
