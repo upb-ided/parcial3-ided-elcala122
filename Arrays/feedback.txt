@@ -1,0 +1,21 @@
+Punto 1
+* La inicialización de la matriz es incorrecta. Se está inicializando un arreglo en lugar de una matriz
+* No se valida que los parámetros sean operables (tengan las mismas dimensiones)
+* La aplicación de la operación es correcta
+Total: 0.6 / 1.0
+Punto 2
+* La inicialización de la matriz es incorrecta. Se está inicializando un arreglo en lugar de una matriz
+* La aplicación de la operación es correcta
+Total: 0.8 / 1.0
+Punto 3
+* La inicialización de la matriz es incorrecta. Faltan las dimensiones de la matriz 'result'
+* No se valida que los parámetros sean operables (tengan las mismas dimensiones)
+* La aplicación de la operación es incorrecta. El producto de matrices no es el producto de los elementos uno a uno. Además, falta una iteración
+Total: 1.3 / 2.0
+Punto 4:
+* La matriz 'result' nunca deja de ser nula antes de que el algoritmo llegue al punto de la operación
+* No se valida que los parámetros sean operables (tengan las mismas dimensiones)
+* La aplicación de la operación es incorrecta. En ninguna parte la operación pide multiplicar elementos de las matrices.
+Total: 0.3 / 1.0
+
+Total examen: 3.0
